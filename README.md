@@ -2,8 +2,13 @@
 Application automating restaurant functions
 Team name: LocalEatery
 Project title:  Restaurant Automation 
-repository   
-Team members:
+Repository: https://github.com/VarezF/LocalEatery
+Team members: Nikita Fischer (NikitaFischer)
+              Jarred Eagley  (JarredEagley)
+              Jacob Plank
+              Joy Dang
+              David Henshaw
+              Zeid Al-Ameedi
 
 This project develops a computerized system to help restaurant personnel coordinate their activities and improve their services, and for the management to track business growth and create future plans. 
 Typical problems restaurant personnel are facing include: coordination of their work activities, anticipating and handling periods of low/high patron traffic, recognizing trends early enough to take advantage of bestsellers or abandon the flops, lowering operating costs, and increasing efficiency/productivity and profits. Many restaurants are still operated using pen and paper methods, with little or no automation. Patrons enter the facility to be greeted by a host, who often times has a “dry erase” diagram of the tables, maintained on a blackboard. The host can see the status of the tables based on whether or not they or someone else physically updates the diagram. Once seated a waiter tends to the costumers by jotting down the orders onto a piece of carbon paper and delivers it to the kitchen for proper food preparation. The waiter then has to periodically check back to find out when the meal is ready. When the food is done, the piece of carbon paper is saved for proper record keeping by the management. This “old fashion” system works but yields a large amount of tab receipts, wastes a lot of time and is simply outof-date. In old fashion systems, waiters have to carry pads around to take orders, always have a working pen and be sure to keep each bill organized and “synchronized” with the proper table. 
