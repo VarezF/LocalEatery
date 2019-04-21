@@ -8,5 +8,10 @@ namespace Actors
 {
     class Manager : User
     {
+
+
+
+
+
     }
 }
