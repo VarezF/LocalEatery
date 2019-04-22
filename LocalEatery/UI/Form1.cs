@@ -15,6 +15,12 @@ namespace UI
         public Form1()
         {
             InitializeComponent();
+            //Tabs.TabPages;
+            DataGridViewRow row = (DataGridViewRow)Tables.Rows[0].Clone();
+            row.Cells["Column2"].Value = "Waiter";
+            row.Cells["Column3"].Value = "Status";
+            Tables.Rows.Add(row);
         }
+
     }
 }
