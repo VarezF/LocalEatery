@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Menu
 {
@@ -10,7 +6,7 @@ namespace Menu
     /// Menu class that inhereits from Dish, able to adapt based on new entries coming from 
     /// derived class is constant updates.
     /// </summary>
-    public class Menu : Dish
+    public class Menu : MenuLogic.Dish
     {
         /// <summary>
         /// Dictionary that will hold the style of food and the accomodating List that it can carry.
