@@ -8,5 +8,25 @@ namespace MenuLogic
 {
     class Order
     {
+        void addDish(string userOrder)
+        {
+
+        }
+
+        double addOrderSum(int orderSum)
+        {
+
+        }
+
+        bool notifyCook(string userOrder)
+        {
+            if userOrder == '1'
+                {
+                return 1;
+            }
+            else
+                return 0;
+
+        }
     }
 }
