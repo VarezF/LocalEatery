@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MenuLogic
 {
-    class Ingredient
+    public class Ingredient
     {
         // Fields
 
