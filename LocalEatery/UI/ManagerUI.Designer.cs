@@ -7,6 +7,14 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        private MenuLogic.Menu menu;
+
+        private Manager user;
+
+        private void addToMenu(Dish newDish);
+
+        private void sendNotice();
+
         /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
