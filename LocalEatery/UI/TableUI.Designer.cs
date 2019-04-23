@@ -2,16 +2,22 @@
 
 namespace UI
 {
-    partial class CookUI : BaseUI
+    partial class TableUI
     {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        private Queue<Menu.Order> orders;
-        private Menu.Supplies supplies;
-        private Actor.Cook; 
+        List<Table> currentTables;
+
+        private string getStatus(Table);
+
+        private Waiter getWaiter(Table);
+
+        int getWaitTime(Table);
+
+        void addTable(Table);
 
         /// <summary> 
         /// Clean up any resources being used.
