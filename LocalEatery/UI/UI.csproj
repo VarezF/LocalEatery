@@ -67,6 +67,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TableUI.Designer.cs">
+      <DependentUpon>TableUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="WaiterUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
