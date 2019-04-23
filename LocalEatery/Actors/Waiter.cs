@@ -10,7 +10,7 @@ namespace Actors
     {
 
         // Tables the waiter is responsible for.
-        private Table[] tables; // I DON'T CURRENTLY KNOW WHERE TABLE CLASS IS MEANT TO BE IMPLEMENTED.
+        private Table[] tables;
 
         public void addTable(Table _table)
         {
