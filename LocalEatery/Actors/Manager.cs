@@ -9,9 +9,14 @@ namespace Actors
     class Manager : User
     {
 
-
-
-
+        /// <summary>
+        /// Constructor for a 'manager' user object.
+        /// </summary>
+        /// <param name="_name">Name of the manager.</param>
+        public Manager (String _name)
+        {
+            this.setName(_name);
+        }
 
     }
 }
