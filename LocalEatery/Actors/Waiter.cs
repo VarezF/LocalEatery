@@ -15,7 +15,7 @@ namespace Actors
         // Constructor //
 
         /// <summary>
-        /// Constructor for a waiter object.
+        /// Constructor for a 'waiter' user object.
         /// </summary>
         /// <param name="_name">Name of the waiter.</param>
         public Waiter(String _name)
