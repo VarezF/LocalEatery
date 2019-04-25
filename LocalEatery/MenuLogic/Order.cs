@@ -8,6 +8,16 @@ namespace MenuLogic
 {
     public class Order
     {
+        public Order(List<Dish> dishes)
+        {
+            foreach (Dish dish in dishes)
+            {
+                foreach (Ingredient ingredient in dish.ingredients)
+                {
+                    Supplies.
+                }
+            }
+        }
         // Fields
 
         /// <summary>

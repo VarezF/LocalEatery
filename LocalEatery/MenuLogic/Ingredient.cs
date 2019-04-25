@@ -8,6 +8,17 @@ namespace MenuLogic
 {
     public class Ingredient
     {
+        public Ingredient()
+        {
+
+        }
+
+        public Ingredient(string newName, double newCost, double newUnitAmount)
+        {
+            this._name = newName;
+            this._cost = newCost;
+            this._unitAmmount = newUnitAmount;
+        }
         // Fields
 
         /// <summary>
@@ -46,14 +57,6 @@ namespace MenuLogic
         }
 
         // Methods
-
-        // Constructor
-        Ingredient(string name, double cost, double unitAmmount)
-        {
-            this._name = name;
-            this._cost = cost;
-            this._unitAmmount = unitAmmount;
-        }
 
         /// <summary>
         /// Calculates Unit Price for an Ingredient

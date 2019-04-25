@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace MenuLogic
 {
-    class Supplies
+    public class Supplies
     {
+        Dictionary<string, Ingredient> supplyDict;
+        public Supplies()
+        {
+            this.supplyDict = new Dictionary<string, Ingredient>();
+
+        }
+
+        public void addSupply(Ingredient ingredient)
+        {
+            this.supplyDict.Add(ingredient.Name, ingredient);
+        }
+        
         // Fields
 
         /// <summary>
@@ -56,9 +68,11 @@ namespace MenuLogic
         /// Update the supply ammount for an ingredient
         /// </summary>
         /// <param name="i"></param>
-        public void Update(Ingredient i)
+        public void Update(Ingredient ingredient)
         {
-            this.SupplyAmmount -= (int) i.UnitAmmount;
+            Ingredient newIngredient;
+            this.supplyDict.TryGetValue(ingredient.Name, out newIngredient);
+            newIngredient.UnitAmmount -= ingredient.UnitAmmount;
         }
     }
 }

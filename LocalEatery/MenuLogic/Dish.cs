@@ -8,6 +8,13 @@ namespace MenuLogic
 {
     public class Dish
     {
+        
+        public Dish()
+        {
+            this.ingredients = new List<Ingredient>();
+            this.ingredients.Add(new Ingredient("Berry", 1.00, 5));
+        }
+
         // Fields
 
         /// <summary>
@@ -63,7 +70,7 @@ namespace MenuLogic
             set { this._nutritionData = value; }
         }
 
-        public List<Ingredient> Ingredients
+        public List<Ingredient> ingredients
         {
             get { return this._ingredientsList; }
             set { this._ingredientsList = value; }
@@ -99,7 +106,7 @@ namespace MenuLogic
             }
 
             // Print Ingredients List
-            foreach (Ingredient ingredient in Ingredients)
+            foreach (Ingredient ingredient in ingredients)
             {
                 Console.WriteLine(ingredient);
             }           

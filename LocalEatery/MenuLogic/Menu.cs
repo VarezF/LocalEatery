@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Menu
+namespace MenuLogic
 {
     /// <summary>
     /// Menu class that inhereits from Dish, able to adapt based on new entries coming from 
@@ -8,6 +8,7 @@ namespace Menu
     /// </summary>
     public class Menu : MenuLogic.Dish
     {
+        public Supplies supply;
         /// <summary>
         /// Dictionary that will hold the style of food and the accomodating List that it can carry.
         /// </summary>
