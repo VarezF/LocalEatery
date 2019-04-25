@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MenuLogic
 {
-    class Order
+    public class Order
     {
         // Fields
 

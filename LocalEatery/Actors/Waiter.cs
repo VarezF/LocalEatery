@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Actors
 {
-    class Waiter : User
+    public class Waiter : User
     {
 
         // Tables the waiter is responsible for.

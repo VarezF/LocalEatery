@@ -35,6 +35,8 @@ namespace MenuLogic
         /// </summary>
         private List<Ingredient> _ingredientsList;
 
+        private string orderChanges;
+
         // Properties
 
         public string Name

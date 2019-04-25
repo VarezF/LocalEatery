@@ -11,7 +11,7 @@ namespace Menu
         /// <summary>
         /// Dictionary that will hold the style of food and the accomodating List that it can carry.
         /// </summary>
-        private Dictionary<string, MenuLogic.Dish> Dishname = new Dictionary<string, MenuLogic.Dish>();
+        private Dictionary<string, List<string>> Dishname = new Dictionary<string, List<string>>();
 
         /// <summary>
         /// Property setter for our dictionary
