@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Npgsql;
 namespace MenuLogic
 {
     public class Dish
@@ -104,5 +104,35 @@ namespace MenuLogic
                 Console.WriteLine(ingredient);
             }           
         }
+        private string buildconnString()
+        {
+            return "Host=localhost; Username=postgres; Password=memes; Database=cpts322projectdb";
+        }
+        public void sendtodb()
+        {
+            using (var conn = new NpgsqlConnection(buildconnString()))
+            {
+                conn.Open();
+                using (var cmd = new NpgsqlCommand())
+                {
+                    string s1, s2 = "";
+                    foreach(var item in this._ingredientsList)
+                    {
+                        s1 = item.ToString();
+                        s2 = String.Concat(s2, ',');
+                        s2 = String.Concat(s2, s1);
+                    }
+
+                    cmd.Connection = conn;
+                    cmd.CommandText = "INSERT INTO menu (name, price, ingredient, preptime) VALUES('"+this._name+"',"+_price+", '"+s2+"', '"+this._prepTime+"')";
+                    cmd.ExecuteReader();
+                }
+
+                conn.Close();
+            }
+        }
+
     }
 }
+
+
